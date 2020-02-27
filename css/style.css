@@ -1,0 +1,178 @@
+/* ========== reset ========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display';
+}
+
+ul {
+    list-style: none;
+}
+
+/* ========== header superior ========== */
+
+header #btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    padding: 10px 10px 10px 5px;
+    border-right: 2px solid #00bac6;
+}
+
+header label:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.1);
+}
+
+header .header-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    background-color: #252323;
+}
+
+header .header-superior a {
+    margin-left: 11%;
+}
+
+header .header-superior nav {
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 9%;
+}
+
+header .header-superior nav ul {
+    display: flex;
+}
+
+header .header-superior nav ul li {
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+/* ========== header inferior ========== */
+
+header .header-inferior {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+header .header-inferior .search * {
+    background: transparent;
+	border: none;
+	outline: none;
+}
+
+header .header-inferior .search {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #d6d6d6;
+    width: 30%;
+}
+
+header .header-inferior .search input {
+    padding: 6px;
+    width: 100%;
+}
+
+header .header-inferior .search button {
+    padding: 4px;
+}
+
+header .header-inferior .menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header .header-inferior .menu ul li:hover {
+    border-bottom: 2px solid #00bac6;
+}
+
+header .header-inferior .menu ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #08070754;
+    font-weight: bold;
+}
+
+header .header-inferior .menu ul li a:hover {
+    color: #00bac6;
+}
+
+@media screen and (max-width: 840px){
+
+    /* header superior */
+
+    header .header-superior a {
+        margin-left: 20%;
+    }
+
+    header .header-superior nav {
+        margin-left: 10%;
+    }
+
+    /* header inferior */
+
+    header label {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 5px;
+    }
+
+    header .header-inferior .menu {
+        position: absolute;
+        width: 40%;
+        margin-left: -40%;
+        top: 80px;
+        left: 0;
+        transition: all 1s;
+    }
+
+    header .header-inferior .menu ul {
+        flex-direction: column;
+        background-color: #252323;
+        padding: 0 10px 10px 10px;
+        
+    }
+
+    header .header-inferior .menu ul li:hover {
+        border-bottom: none;
+    }
+
+    header .header-inferior .menu ul li {
+        padding: 4px;
+    }
+
+    header .header-inferior .menu ul li a {
+        color: #fff;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+
+    header .header-inferior .search {
+        margin-left: auto;
+        width: 59%;
+    }
+
+    header .header-inferior .search input {
+        width: 100%;
+    }
+}
+
+
