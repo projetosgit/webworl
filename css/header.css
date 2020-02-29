@@ -11,6 +11,19 @@ ul {
     list-style: none;
 }
 
+.bg-slide-title {
+    background-color: rgba(0,0,0,0.5);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 10px #fff;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+}
+
 /* ========== header superior ========== */
 
 header #btn-menu {
@@ -150,6 +163,7 @@ header .header-inferior .menu ul li a:hover {
         top: 80px;
         left: 0;
         transition: all 1s;
+        z-index: 1000;
     }
 
     header .header-inferior .menu ul {
