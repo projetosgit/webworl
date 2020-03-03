@@ -11,19 +11,6 @@ ul {
     list-style: none;
 }
 
-.bg-slide-title {
-    background-color: rgba(0,0,0,0.5);
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    border: 1px solid #fff;
-    box-shadow: 1px 1px 10px #fff;
-    border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-}
-
 /* ========== header superior ========== */
 
 header #btn-menu {
@@ -65,8 +52,8 @@ header .header-superior .home .home-message {
 
 header .header-superior nav {
     width: 200px;
-    margin-top: 10px;
-    margin-right: 9%;
+    margin-top: 15px;
+    margin-right: 6%;
 }
 
 header .header-superior nav ul {
@@ -118,10 +105,6 @@ header .header-inferior .menu ul {
     padding: 0;
 }
 
-header .header-inferior .menu ul li:hover {
-    border-bottom: 2px solid #00bac6;
-}
-
 header .header-inferior .menu ul li a {
     display: block;
     padding: 15px 20px;
@@ -131,8 +114,12 @@ header .header-inferior .menu ul li a {
     font-weight: bold;
 }
 
-header .header-inferior .menu ul li a:hover {
-    color: #00bac6;
+header .header-inferior .menu ul li :hover {
+    color: #fff;
+}
+
+header .header-inferior .menu ul li a:hover { 
+    background-color: #00bac6;
 }
 
 @media screen and (max-width: 840px){
@@ -140,11 +127,12 @@ header .header-inferior .menu ul li a:hover {
     /* header superior */
 
     header .header-superior .home {
-        margin-left: 20%;
+        margin-left: 25%;
+        margin-right: auto;
     }
 
     header .header-superior nav {
-        margin-left: 10%;
+        margin-left: 15%;
     }
 
     /* header inferior */
@@ -198,5 +186,8 @@ header .header-inferior .menu ul li a:hover {
         width: 100%;
     }
 }
+
+
+
 
 

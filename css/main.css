@@ -1,0 +1,111 @@
+/* ========== área do slide show ========== */
+
+.bg-slide-title {
+    position: absolute;
+    top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+}
+
+@media screen and (max-width: 768px){
+
+    .bg-slide-title {
+       top: 30px;
+       width: 70%;
+    }
+
+    .bg-slide-title > h2 {
+        font-size: 15px;
+    }
+
+    .bg-slide-title > h3 {
+        font-size: 15px;
+    }
+}
+
+/* ========== article main ========== */
+
+.article-main {
+    padding: 10px;
+    margin-bottom: 3%;
+}
+
+.article-main header h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.article-main p {
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+/* ========== figures main ========== */
+
+.cards-main {
+   width: 100%;
+}
+
+.cards-main .figures-container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.cards-main .figures-container .figure-main {
+    width: 33.333%;
+}
+
+.cards-main .figures-container .figure-main img {
+    margin-left: 15%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.cards-main .figures-container .figure-main h4,p {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px){
+
+    .cards-main .figures-container .figure-main {
+        padding-right: 10px;
+    }
+    
+    .cards-main .figures-container .figure-main img {
+        margin-left: 0;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 790px){
+
+    .cards-main .figures-container {
+        flex-direction: column;
+    }
+
+    .cards-main .figures-container .figure-main {
+        margin: 0 auto;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 670px) and (max-width: 800px){
+
+    .cards-main .figures-container {
+        flex-direction: column;
+    }
+
+    .cards-main .figures-container .figure-main {
+        width: 400px;
+        border-bottom: 2px solid #03b6ec;
+        margin-bottom: 20px;
+    }
+}

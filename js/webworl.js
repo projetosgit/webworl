@@ -11,20 +11,24 @@ var logo_x = window.matchMedia("(max-width: 700px)"); //Essa variável controla 
 
 home.addEventListener("mouseenter", message_logo_enter);
 home.addEventListener("mouseleave", message_logo_leave);
+home.addEventListener("mouseenter", logo_breakpoint);
 
-function message_logo_enter(){
+function message_logo_enter() {
     home_message.style.opacity = "1";
     home_message.style.transition = "opacity 1s";
 
-    if(logo_x.matches){
-        home_message.style.display = "none";
-    } 
+    if (logo_x.matches) {
+        home_message.style.fontSize = "0px";
+    } else {
+        home_message.style.fontSize = "14px";
+    }
 }
 
-function message_logo_leave(){
+function message_logo_leave() {
     home_message.style.opacity = "0";
     home_message.style.transition = "opacity 1s";
 }
+
 
 
 
